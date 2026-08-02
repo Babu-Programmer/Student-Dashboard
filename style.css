@@ -542,3 +542,131 @@ canvas{
 .profile-card button:hover{
     background:#1d4ed8;
 }
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width:1200px){
+
+.dashboard-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard-bottom{
+grid-template-columns:1fr;
+}
+
+.stats-section{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+.container{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+min-height:auto;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.search-box{
+width:100%;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.last-row{
+grid-template-columns:1fr;
+}
+
+.stats-section{
+grid-template-columns:1fr;
+}
+
+.profile-card{
+width:100%;
+}
+
+}
+
+/* ==========================
+   Smooth Animation
+========================== */
+
+.card,
+.stat-card,
+.assignment-card,
+.attendance-card,
+.activity,
+.schedule,
+.profile-card,
+.quick-card,
+.graph-card{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   Hover Effects
+========================== */
+
+.card:hover,
+.assignment-card:hover,
+.attendance-card:hover,
+.activity:hover,
+.schedule:hover,
+.stat-card:hover,
+.quick-card:hover,
+.graph-card:hover,
+.course-table:hover{
+
+transform:translateY(-6px);
+transition:.3s;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#e5e7eb;
+}
+
+::-webkit-scrollbar-thumb{
+background:#3b82f6;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#2563eb;
+}
