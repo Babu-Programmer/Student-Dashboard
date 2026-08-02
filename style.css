@@ -409,3 +409,136 @@ canvas{
     background:#1f2937;
     color:#fff;
 }
+/* ==========================
+   Activity & Schedule
+========================== */
+
+.activity,
+.schedule{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.activity h2,
+.schedule h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.activity ul{
+    list-style:none;
+}
+
+.activity ul li{
+    padding:14px;
+    margin-bottom:10px;
+    background:#f5f7fb;
+    border-left:5px solid #3b82f6;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.activity ul li:hover{
+    transform:translateX(8px);
+}
+
+.event{
+    background:#f8fafc;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.event h3{
+    color:#2563eb;
+    margin-bottom:5px;
+}
+
+.event p{
+    color:#666;
+}
+
+/* ==========================
+   Stats Cards
+========================== */
+
+.stats-section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:25px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:25px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.stat-card h2{
+    font-size:30px;
+}
+
+.stat-card p{
+    color:#666;
+}
+
+/* ==========================
+   Profile Card
+========================== */
+
+.profile-card{
+    width:350px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:20px;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #3b82f6;
+}
+
+.profile-card h2{
+    margin-top:15px;
+}
+
+.profile-card p{
+    color:#666;
+    margin:10px 0;
+}
+
+.profile-card button{
+    padding:12px 25px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-card button:hover{
+    background:#1d4ed8;
+}
