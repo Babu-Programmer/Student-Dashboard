@@ -1,34 +1,55 @@
-// ===== Current Date =====
+// ===============================
+// Current Date
+// ===============================
 
 const date = document.getElementById("date");
 
-const today = new Date();
+function updateDate() {
+    const today = new Date();
 
-date.innerHTML = today.toDateString();
+    date.innerHTML = today.toLocaleDateString("en-IN", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
+}
+
+updateDate();
 
 
-// ===== Dark Mode =====
+// ===============================
+// Theme Button
+// ===============================
 
 const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", () => {
+themeBtn.onclick = () => {
 
     document.body.classList.toggle("dark");
 
-    if(document.body.classList.contains("dark")){
+    if (document.body.classList.contains("dark")) {
+
         themeBtn.innerHTML = "☀️";
-    }else{
+
+    } else {
+
         themeBtn.innerHTML = "🌙";
+
     }
 
-});
+};
 
 
-// ===== Chart =====
+// ===============================
+// Chart
+// ===============================
 
-const ctx = document.getElementById("performanceChart");
+const canvas = document.getElementById("performanceChart");
 
-new Chart(ctx, {
+if (canvas) {
+
+new Chart(canvas, {
 
 type: "line",
 
@@ -40,11 +61,11 @@ datasets: [{
 
 label: "Performance",
 
-data: [65,72,70,80,85,90],
+data: [65,70,75,80,84,90],
 
-borderColor: "#3b82f6",
+borderColor: "#2563eb",
 
-backgroundColor: "rgba(59,130,246,.2)",
+backgroundColor: "rgba(37,99,235,.15)",
 
 fill: true,
 
@@ -69,5 +90,31 @@ display: true
 }
 
 }
+
+});
+
+}
+
+
+// ===============================
+// Welcome Message
+// ===============================
+
+window.onload = () => {
+
+console.log("Welcome to EduDash");
+
+};
+
+
+// ===============================
+// Card Animation
+// ===============================
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card,index)=>{
+
+card.style.animationDelay = `${index*0.2}s`;
 
 });
