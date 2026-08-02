@@ -1,239 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduDash - Student Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduDash - Student Dashboard</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- Sidebar -->
+<aside class="sidebar">
 
-    <aside class="sidebar">
+<div class="logo">
+<h2>🎓 EduDash</h2>
+</div>
 
-        <div class="logo">
-            <h2>🎓 EduDash</h2>
-        </div>
+<ul>
 
-        <ul>
+<li class="active">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
 
-            <li class="active">
-                <i class="fa-solid fa-house"></i>
-                Dashboard
-            </li>
+<li>
+<i class="fa-solid fa-user"></i>
+Profile
+</li>
 
-            <li>
-                <i class="fa-solid fa-user"></i>
-                Profile
-            </li>
+<li>
+<i class="fa-solid fa-book"></i>
+Courses
+</li>
 
-            <li>
-                <i class="fa-solid fa-book"></i>
-                Courses
-            </li>
+<li>
+<i class="fa-solid fa-chart-line"></i>
+Performance
+</li>
 
-            <li>
-                <i class="fa-solid fa-chart-line"></i>
-                Performance
-            </li>
+<li>
+<i class="fa-solid fa-calendar"></i>
+Schedule
+</li>
 
-            <li>
-                <i class="fa-solid fa-calendar"></i>
-                Schedule
-            </li>
+<li>
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
 
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                Settings
-            </li>
+</ul>
 
-        </ul>
+</aside>
 
-    </aside>
+<main class="main">
 
-    <!-- Main -->
+<header>
 
-    <main class="main">
+<div class="search-box">
 
-        <header>
+<i class="fa-solid fa-search"></i>
 
-            <div class="search-box">
+<input type="text" placeholder="Search...">
 
-                <i class="fa-solid fa-search"></i>
+</div>
 
-                <input
-                type="text"
-                placeholder="Search...">
+<div class="top-right">
 
-            </div>
+<i class="fa-solid fa-bell"></i>
 
-            <div class="top-right">
+<img src="images/profile.jpg" alt="Profile">
 
-                <i class="fa-solid fa-bell"></i>
+<p id="date"></p>
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTassLP5zrrax0ITczpGtvEwOfMceUpgP8hXXJSX7NzdA&s=10">
-                <p id="date"></p>
+<button id="themeBtn">🌙</button>
 
-<button id="themeBtn">
-    🌙
-</button>
-            </div>
+</div>
 
-        </header>
+</header>
 
-        <div class="welcome">
+<div class="welcome">
 
-            <h1>Hello Tipu Babu👋</h1>
+<h1>Hello Tipu Babu 👋</h1>
 
-            <p>Welcome back to EduDash</p>
+<p>Welcome back to EduDash</p>
 
-        </div>
+</div>
 
-        <div class="cards">
+<div class="cards">
 
-            <div class="card blue">
+<div class="card blue">
+<h3>Total Courses</h3>
+<h1>08</h1>
+</div>
 
-                <h3>Total Courses</h3>
+<div class="card green">
+<h3>Attendance</h3>
+<h1>72%</h1>
+</div>
 
-                <h1>08</h1>
+<div class="card orange">
+<h3>Assignments</h3>
+<h1>14</h1>
+</div>
 
-            </div>
-
-            <div class="card green">
-
-                <h3>Attendance</h3>
-
-                <h1>72%</h1>
-
-            </div>
-
-            <div class="card orange">
-
-                <h3>Assignments</h3>
-
-                <h1>14</h1>
-
-            </div>
-
-            <div class="card purple">
-
-                <h3>CGPA</h3>
-                <h2>(7.78) I semester</h2>
-                <h2>(7.87) II semester</h2>
-
-            </div>
-
-        </div>
-
-        <!-- अगला सेक्शन यहीं से शुरू होगा -->
-
-    </main>
+<div class="card purple">
+<h3>CGPA</h3>
+<h2>7.78 (Semester I)</h2>
+<h2>7.87 (Semester II)</h2>
+</div>
 
 </div>
 <section class="dashboard-grid">
 
-    <div class="attendance-card">
+<div class="attendance-card">
 
-        <h2>Attendance</h2>
+<h2>Attendance</h2>
 
-        <div class="progress-circle">
-            <div class="progress-inner">
-                <h1>72%</h1>
-                <p>Present</p>
-            </div>
-        </div>
+<div class="progress-circle">
+<div class="progress-inner">
+<h1>72%</h1>
+<p>Present</p>
+</div>
+</div>
 
-    </div>
+</div>
+
 <div class="assignment-card">
 
-    <h2>Recent Assignments</h2>
+<h2>Recent Assignments</h2>
 
-    <div class="assignment-item">
-        <span>HTML Project</span>
-        <span class="status done">Done</span>
-    </div>
+<div class="assignment-item">
+<span>HTML Project</span>
+<span class="status done">Done</span>
+</div>
 
-    <div class="assignment-item">
-        <span>CSS Dashboard</span>
-        <span class="status running">Running</span>
-    </div>
+<div class="assignment-item">
+<span>CSS Dashboard</span>
+<span class="status running">Running</span>
+</div>
 
-    <div class="assignment-item">
-        <span>JavaScript Quiz</span>
-        <span class="status pending">Pending</span>
-    </div>
+<div class="assignment-item">
+<span>JavaScript Quiz</span>
+<span class="status pending">Pending</span>
+</div>
 
-    <div class="assignment-item">
-        <span>Python Lab</span>
-        <span class="status done">Done</span>
-    </div>
+<div class="assignment-item">
+<span>Python Lab</span>
+<span class="status done">Done</span>
+</div>
 
 </div>
-    <div class="assignment-card">
 
-        <h2>Recent Assignments</h2>
-
-        <div class="assignment-item">
-            <span>HTML Project</span>
-            <span class="status done">Done</span>
-        </div>
-
-        <div class="assignment-item">
-            <span>CSS Dashboard</span>
-            <span class="status running">Running</span>
-        </div>
-
-        <div class="assignment-item">
-            <span>JavaScript Quiz</span>
-            <span class="status pending">Pending</span>
-        </div>
-
-        <div class="assignment-item">
-            <span>Python Lab</span>
-            <span class="status done">Done</span>
-        </div>
-
-    </div>
 <div class="course-table">
-    <div class="dashboard-bottom">
-
-    <div class="graph-card">
-
-        <h2>Performance</h2>
-
-        <div class="graph-card">
-
-    <h2>Performance</h2>
-
-    <canvas id="performanceChart"></canvas>
-
-</div>
-
-    </div>
-
-    <div class="quick-card">
-
-        <h2>Quick Actions</h2>
-
-        <button>📚 View Courses</button>
-        <button>📝 Submit Assignment</button>
-        <button>📊 Check Result</button>
-        <button>👤 Edit Profile</button>
-
-    </div>
-
-</div>
 
 <h2>My Courses</h2>
 
@@ -266,86 +194,115 @@
 </table>
 
 </div>
+
 </section>
 <section class="last-row">
 
-    <div class="activity">
+<div class="activity">
 
-        <h2>Recent Activity</h2>
+<h2>Recent Activity</h2>
 
-        <ul>
-            <li>✅ HTML Assignment Submitted</li>
-            <li>📚 CSS Class Completed</li>
-            <li>📝 JavaScript Quiz Started</li>
-            <li>🏆 Attendance reached 92%</li>
-            <li>🎓 New Certificate Added</li>
-        </ul>
+<ul>
+<li>✅ HTML Assignment Submitted</li>
+<li>📚 CSS Class Completed</li>
+<li>📝 JavaScript Quiz Started</li>
+<li>🏆 Attendance reached 92%</li>
+<li>🎓 New Certificate Added</li>
+</ul>
 
-    </div>
+</div>
 
-    <div class="schedule">
+<div class="schedule">
 
-        <h2>Today's Schedule</h2>
+<h2>Today's Schedule</h2>
 
-        <div class="event">
-            <h3>10:00 AM</h3>
-            <p>Web Development Class</p>
-        </div>
+<div class="event">
+<h3>10:00 AM</h3>
+<p>Web Development Class</p>
+</div>
 
-        <div class="event">
-            <h3>1:00 PM</h3>
-            <p>Lab Practical</p>
-        </div>
+<div class="event">
+<h3>1:00 PM</h3>
+<p>Lab Practical</p>
+</div>
 
-        <div class="event">
-            <h3>4:00 PM</h3>
-            <p>Project Meeting</p>
-        </div>
+<div class="event">
+<h3>4:00 PM</h3>
+<p>Project Meeting</p>
+</div>
 
-    </div>
+</div>
 
 </section>
+
 <section class="stats-section">
 
-    <div class="stat-card">
-        <i class="fa-solid fa-users"></i>
-        <h2>520</h2>
-        <p>Total Students</p>
-    </div>
+<div class="stat-card">
+<i class="fa-solid fa-users"></i>
+<h2>520</h2>
+<p>Total Students</p>
+</div>
 
-    <div class="stat-card">
-        <i class="fa-solid fa-book-open"></i>
-        <h2>18</h2>
-        <p>Total Courses</p>
-    </div>
+<div class="stat-card">
+<i class="fa-solid fa-book-open"></i>
+<h2>18</h2>
+<p>Total Courses</p>
+</div>
 
-    <div class="stat-card">
-        <i class="fa-solid fa-award"></i>
-        <h2>35</h2>
-        <p>Certificates</p>
-    </div>
+<div class="stat-card">
+<i class="fa-solid fa-award"></i>
+<h2>35</h2>
+<p>Certificates</p>
+</div>
 
-    <div class="stat-card">
-        <i class="fa-solid fa-ranking-star"></i>
-        <h2>#12</h2>
-        <p>College Rank</p>
-    </div>
+<div class="stat-card">
+<i class="fa-solid fa-ranking-star"></i>
+<h2>#12</h2>
+<p>College Rank</p>
+</div>
 
 </section>
 
 <section class="profile-card">
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTassLP5zrrax0ITczpGtvEwOfMceUpgP8hXXJSX7NzdA&s=10">
+<img src="images/profile.jpg" alt="Profile">
 
-    <h2>Tipu Marandi</h2>
+<h2>Tipu Marandi</h2>
 
-    <p>Computer Science Student</p>
+<p>Computer Science Student</p>
 
-    <button>Edit Profile</button>
+<button>Edit Profile</button>
 
 </section>
+<section class="dashboard-bottom">
+
+<div class="graph-card">
+
+<h2>Performance</h2>
+
+<canvas id="performanceChart"></canvas>
+
+</div>
+
+<div class="quick-card">
+
+<h2>Quick Actions</h2>
+
+<button>📚 View Courses</button>
+<button>📝 Submit Assignment</button>
+<button>📊 Check Result</button>
+<button>👤 Edit Profile</button>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
+<script src="style.js"></script>
 
 </body>
 </html>
