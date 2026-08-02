@@ -387,3 +387,25 @@ canvas{
     width:100%;
 }
 }
+.dark{
+    background:#111827;
+    color:#fff;
+}
+
+.dark .sidebar{
+    background:#000;
+}
+
+.dark .attendance-card,
+.dark .assignment-card,
+.dark .course-table,
+.dark .activity,
+.dark .schedule,
+.dark .profile-card,
+.dark .quick-card,
+.dark .graph-card,
+.dark .stat-card,
+.dark .search-box{
+    background:#1f2937;
+    color:#fff;
+}
